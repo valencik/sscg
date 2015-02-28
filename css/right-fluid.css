@@ -1,9 +1,6 @@
 html {
-    box-sizing:border-box
-}
-
-*,:before,:after {
-    box-sizing:inherit
+    box-sizing:border-box;
+    font-family: sans-serif
 }
 
 body {
@@ -26,44 +23,50 @@ h1 {
 
 .nav {
     list-style:none;
-    margin-left:0;
-    margin-bottom:0;
-    padding-left:0
+    padding-left:10
 }
 
 .nav > li,.nav > li > a {
     display: inline-block;
-    zoom:1
 }
 
 a:link {
-    color: #fff
+    color: #fff;
+    text-decoration: none
 }
 
-/* MEDIA QUERIES */
+footer a:link {
+    color: #000
+}
+
+/* Landscape view */
 @media screen and (min-width: 47.5em ) {
 .columns-container {
     float:left
 }
 
 .sidebar {
-    background-color: #302040;
-    color: #fff;
     position: fixed;
     top: 0px;
     bottom: 0px;
     width:18.75em;
-    margin-right:-19.3em;
     float:left
 }
 
 .nav > li,.nav > li > a {
     display: list-item;
-    zoom:1
 }
 
 .right-column {
     margin-left:20em;
     float:left
+}
+
+footer {
+    color: #fff
+}
+
+footer a:link {
+    color: #fff
 }
 }
